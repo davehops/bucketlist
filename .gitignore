@@ -1,0 +1,3 @@
+## ignore sensitive information
+/venv/
+setup.sh
