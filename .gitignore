@@ -1,3 +1,4 @@
 ## ignore sensitive information
 /venv/
 setup.sh
+setup.bat
