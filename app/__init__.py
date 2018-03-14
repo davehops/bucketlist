@@ -62,10 +62,13 @@ def create_app(config_name):
             abort(404)
 
         if request.method == 'DELETE':
+            messageString = "bucketlist {} delete successfully".format(bucketlist.id)
             bucketlist.delete()
-            return {
-            "message": "bucketlist {} deleted successfully".format(bucketlist.id)
-         }, 200
+            response = jsonify({
+                'message': messageString
+            })
+            response.status_code = 204
+            return response
 
         elif request.method == 'PUT':
             name = str(request.data.get('name', ''))

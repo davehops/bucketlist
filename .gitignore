@@ -1,4 +1,5 @@
 ## ignore sensitive information
 /venv/
-setup.sh
-setup.bat
+bucketlist.db
+/__pycache__/
+/migrations/
