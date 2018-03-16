@@ -1,5 +1,6 @@
 ## ignore sensitive information
 /venv/
 bucketlist.db
+*.pyc
 /__pycache__/
 /migrations/
