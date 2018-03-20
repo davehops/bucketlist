@@ -64,7 +64,7 @@ class BucketlistTestCase(unittest.TestCase):
             data={'name': 'Eat, pray and love'})
         self.assertEqual(rv.status_code, 201)
         res = self.client().delete('/bucketlists/1')
-        self.assertEqual(res.status_code, 204)
+        self.assertEqual(res.status_code, 200)
         # Test to see if it exists, should return a 404
         result = self.client().get('/bucketlists/1')
         self.assertEqual(result.status_code, 404)
