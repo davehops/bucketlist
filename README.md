@@ -13,9 +13,9 @@
 2. cd into the new bucketlist directory
 3. source nixSetup.sh
 4. pip install -r requirements.txt
-5. python ../manage.py db init
-6. python ../manage.py db migrate
-7. python ../manage.py db upgrade
+5. python manage.py db init
+6. python manage.py db migrate
+7. python manage.py db upgrade
 8. ln bucketlist.db app/bucketlist.db
 9. flask run
 
